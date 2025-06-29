@@ -2,17 +2,25 @@ package br.com.dio.desafio.dominio;
 
 import java.time.LocalDate;
 
-public class Clientes {
-    private String nome;
+public class Clientes extends Agendamento{
     private LocalDate data_consulta;
-    public String cachorro;
+    private int valor;
+    private String consulta;
 
-    public String getNome() {
-        return nome;
+    public String getConsulta() {
+        return consulta;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setConsulta(String consulta) {
+        this.consulta = consulta;
+    }
+
+    public int getValor() {
+        return valor;
+    }
+
+    public void setValor(int valor) {
+        this.valor = valor;
     }
 
     public LocalDate getData_consulta() {
@@ -23,22 +31,18 @@ public class Clientes {
         this.data_consulta = data_consulta;
     }
 
-    public String getCachorro() {
-        return cachorro;
+    @Override
+    public double caclcularValor() {
+        return valor_agendamento + getValor();
     }
-
-    public void setCachorro(String cachorro) {
-        this.cachorro = cachorro;
-    }
-
 
 
     @Override
     public String toString() {
         return "Clientes{" +
-                "nome='" + nome + '\'' +
-                ", data_consulta=" + data_consulta +
-                ", cachorro='" + cachorro + '\'' +
+                "data_consulta=" + data_consulta +
+                ", valor=" + valor +
+                ", consulta='" + consulta + '\'' +
                 '}';
     }
 }

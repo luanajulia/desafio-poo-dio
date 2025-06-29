@@ -1,9 +1,15 @@
 package br.com.dio.desafio.dominio;
 
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+
 public class Consultas {
-    private String Nome;
+    public String Nome;
     private String Descricao;
-    private int Valor;
+    private Set<Diaria> diariaAgendada = new HashSet<>();
+    private Set<Clientes> agendaCliente = new HashSet<>();
 
     public String getNome() {
         return Nome;
@@ -21,20 +27,30 @@ public class Consultas {
         Descricao = descricao;
     }
 
-    public int getValor() {
-        return Valor;
+
+    public Set<Clientes> getAgendaCliente() {
+        return agendaCliente;
     }
 
-    public void setValor(int valor) {
-        Valor = valor;
+    public void setAgendaCliente(Set<Clientes> agendaCliente) {
+        this.agendaCliente = agendaCliente;
     }
+
+    public Collection<? extends Agendamento> getDiariaAgendada() {
+        return diariaAgendada;
+    }
+
+    public void setDiariaAgendada(Set<Diaria> diariaAgendada) {
+        this.diariaAgendada = diariaAgendada;
+    }
+
+
 
     @Override
-    public String toString() {
-        return "Consultas{" +
-                "Nome='" + Nome + '\'' +
-                ", Descricao='" + Descricao + '\'' +
-                ", Valor=" + Valor +
-                '}';
+    public int hashCode() {
+        return Objects.hash(Nome, Descricao, diariaAgendada);
     }
+
+
+
 }

@@ -1,16 +1,7 @@
 package br.com.dio.desafio.dominio;
 
-public class Cachorros {
-    private String nome;
+public class Cachorros extends Agendamento{
     private String raca;
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public String getRaca() {
         return raca;
@@ -20,10 +11,17 @@ public class Cachorros {
         this.raca = raca;
     }
 
+
+    @Override
+    public double caclcularValor() {
+        return valor_agendamento;
+    }
+
     @Override
     public String toString() {
         return "Cachorros{" +
-                "nome='" + nome + '\'' +
+                "nome_cliente='" + getNome_cliente() + '\'' +
+                ", nome_cachorro='" + getNome_cachorro() + '\'' +
                 ", raca='" + raca + '\'' +
                 '}';
     }
