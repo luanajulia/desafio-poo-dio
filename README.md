@@ -14,17 +14,17 @@
   <tbody align="left">
     <tr>
       <td>Agendamento(classe Mae)</td>
-      <td>cacularValor</td>
+      <td>calcularValor</td>
       <td>nome_cliente | nome_cachorro</td>
     </tr>
     <tr>
       <td>Clientes(classe Filha)</td>
-      <td>caclcularValor</td>
+      <td>calcularValor</td>
       <td>nome_cliente | nome_cachorro | data_consulta | valor | consulta </td>
     </tr>
     <tr>
       <td>Cachorro(classe Filha)</td>
-      <td>caclcularValor</td>
+      <td>calcularValor</td>
       <td>nome_cliente | nome_cachorro | raca </td>
     </tr>
     <tr>
