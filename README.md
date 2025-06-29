@@ -1,6 +1,6 @@
 <h1> Desafio: Aprenda na Prática Programação Orientada a Objetos</h1>
 
-<p align="center"> Projeto POO Bootcamp Toonie (PROBLEMA REAL: Agenda Veterinaria) : Para utilizar os principios POO atraves do projeto Inspirado, eu realizei um agendamento veterinario que adciona ao cronograma de uma veterinaria  uma consulta que tem como atributo um valor por consulta, a cada consulta realizada e somada o valor da consulta</p>
+<p align="center"> Projeto POO Bootcamp Toonie (PROBLEMA REAL: Agenda Veterinária) : Para utilizar os princípios POO através do projeto Inspirado, eu realizei um agendamento veterinário que adiciona ao cronograma de uma veterinária uma consulta que tem como atributo um valor por consulta, a cada consulta realizada e somada o valor da consulta, caso não seja realizada continua atribuída sem contabilizar o valor da consulta.</p>
 
 ## Classe, Metodo e Atributo 
 <table>
